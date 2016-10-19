@@ -14,18 +14,13 @@
  * limitations under the License.
  */
 
-import sbt._
 import sbt.Keys._
-import uk.gov.hmrc.PublishingSettings._
-import uk.gov.hmrc.SbtAutoBuildPlugin
+import sbt._
 import uk.gov.hmrc.versioning.SbtGitVersioning
 
 object HmrcBuild extends Build {
 
   import uk.gov.hmrc._
-  import DefaultBuildSettings._
-  import uk.gov.hmrc.{SbtBuildInfo, ShellPrompt}
-  import uk.gov.hmrc.PublishingSettings._
 
   val appName = "http-verbs-test"
 
@@ -44,7 +39,7 @@ object HmrcBuild extends Build {
 
 private object AppDependencies {
 
-  import play.PlayImport._
+  import play.sbt.PlayImport._
 
   val compile = Seq(
     ws,
