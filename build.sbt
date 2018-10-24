@@ -1,7 +1,7 @@
 import sbt.Keys._
 import sbt._
 
-val appName = "http-verbs-test"
+val libName = "http-verbs-test"
 
 val compileDependencies = Seq(
   ws,
@@ -10,7 +10,7 @@ val compileDependencies = Seq(
   "org.pegdown"   %  "pegdown"   % "1.5.0"
 )
 
-lazy val libraryName = Project(appName, file("."))
+lazy val libraryName = Project(libName, file("."))
   .enablePlugins(SbtAutoBuildPlugin, SbtGitVersioning, SbtArtifactory)
   .settings(
     majorVersion := 1,
