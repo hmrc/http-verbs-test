@@ -25,6 +25,10 @@ val compileDependencies = PlayCrossCompilation.dependencies(
   play26 = Seq(
     "com.typesafe.play"              %% "play-ws"                % "2.6.20",
     "com.typesafe.play"              %% "play-json"              % "2.6.13"
+  ),
+  play27 = Seq(
+    "com.typesafe.play"              %% "play-ws"                % "2.7.4",
+    "com.typesafe.play"              %% "play-json"              % "2.7.4"
   )
 )
 
@@ -38,6 +42,6 @@ lazy val libraryName = Project(libName, file("."))
     crossScalaVersions := Seq("2.11.12", "2.12.8"),
     resolvers := Seq(
       Resolver.bintrayRepo("hmrc", "releases"),
-      "typesafe-releases" at "http://repo.typesafe.com/typesafe/releases/"
+      "typesafe-releases" at "https://repo.typesafe.com/typesafe/releases/"
     )
   ).settings(PlayCrossCompilation.playCrossCompilationSettings)
