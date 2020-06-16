@@ -8,6 +8,7 @@ http-verbs-test
 ```scala
 libraryDependencies += "uk.gov.hmrc" %% "http-verbs-test-play-xx" % "x.x.x"
 ```
+
 ===============
 
 http-verbs-test is a Scala library providing some useful logic for testing http-related code.
