@@ -3,7 +3,12 @@ http-verbs-test
 
 [![Build Status](https://travis-ci.org/hmrc/http-verbs-test.svg)](https://travis-ci.org/hmrc/http-verbs-test) [ ![Download](https://api.bintray.com/packages/hmrc/releases/http-verbs-test/images/download.svg) ](https://bintray.com/hmrc/releases/http-verbs-test/_latestVersion)
 
-http-verbs-test is a Scala library providing some useful logic for testing http-related code.
+## This library is deprecated
+### All classes from this library have been migrated to [http-verbs](https://github.com/hmrc/http-verbs). This is available for Play 2.5, 2.6, and 2.7. Please read the documentation on that project for useage.
+
+---------------
+
+http-verbs-test was a Scala library providing some useful logic for testing http-related code.
 
 ## Adding to your build
 
